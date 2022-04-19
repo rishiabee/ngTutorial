@@ -12,7 +12,7 @@ Vehicles {{ vehicles.length | json}} <br>
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5">
     <ng-container *ngFor="let p of people">
       <div *ngIf="p.gender === 'male'" class="bg-green-100 text-green-500 text-lg font-bold text-center p-10 rounded-lg">
-        {{p.birthYear}}
+        {{p.name}}
       </div>
       <div *ngIf="p.gender === 'female'" class="bg-pink-100 text-pink-500 text-lg font-bold text-center p-10 rounded-lg">
         {{p.name}}
