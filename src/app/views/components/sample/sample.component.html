@@ -5,6 +5,7 @@ Species {{ species.length | json}} <br>
 Starships {{ starships.length | json}} <br>
 Vehicles {{ vehicles.length | json}} <br>
 
+<div class="flex items-center justify-center text-3xl cursor-pointer" (click)="showPeople()">🔄</div>
 <div class="min-h-screen flex items-center justify-center">
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5">
     <ng-container *ngFor="let p of people">

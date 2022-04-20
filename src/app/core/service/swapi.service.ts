@@ -17,6 +17,10 @@ export class SwapiService {
     return this.http.get<Observable<PeopleData>>(this.baseUrl+'people');
   }
 
+  getRandomPeople() {
+    return this.http.get<Observable<PeopleData>>(this.baseUrl+'people', {params : {page: Math.floor(Math.random() * 8)}});
+  }
+
   getFilms() {
     return this.http.get<Observable<FilmData>>(this.baseUrl+'films');
   }

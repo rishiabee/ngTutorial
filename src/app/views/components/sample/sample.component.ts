@@ -31,7 +31,7 @@ export class SampleComponent implements OnInit {
   }
 
   showPeople() {
-    this.swapiService.getPeople()
+    this.swapiService.getRandomPeople()
       .subscribe((data: any) => {
         this.people = data?.results})
   }
